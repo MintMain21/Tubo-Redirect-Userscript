@@ -6,6 +6,7 @@
 // @author       MintMain21
 // @match        *://*.youtube.com/*
 // @match        *://youtu.be/*
+// @license      MIT
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=migalmoreno.com
 // @grant        none
 // ==/UserScript==
