@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tubo Redirect
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Redirect YouTube to Tubo
 // @author       MintMain21
 // @match        *://*.youtube.com/*
@@ -33,7 +33,9 @@ const url = getCurrentURL();
     if(url.includes("/channel/")) {
         window.location.replace("https://tubo.migalmoreno.com/channel?url=" + url);
     }
-
+        if(url.includes("/shorts/")) {
+        window.location.replace("https://tubo.migalmoreno.com/stream?url=" + url);
+    }
 
 })();
 
